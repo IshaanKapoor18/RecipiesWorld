@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puchka</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-6.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+    <script src="/Recipies-doc/Recipe-1/recipe1.js"></script>
+</head>
+<body>
+    <button onclick="work()"><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Puchka</h1>
+        </div>
+        <img src="first.jpg" alt="Puchka pic">
+    
+        <input type="submit"  id="voice" 
+        onclick="micStarted()" value="Start Voice">
+       
+        <script>
+           
+           a = 1;
+           function micStarted(){
+//   voice 
+
+                speechSynthesis.cancel();
+                let utterance = new SpeechSynthesisUtterance("Panipuri, fuchka, phuchka, gupchup, golgappa, or pani ke patashe is a type of snack originating in the Indian subcontinent, where it is an extremely common street food. ");
+                speechSynthesis.speak(utterance);
+
+                utterance = new SpeechSynthesisUtterance("");
+                speechSynthesis.speak(utterance);
+                if(a == 1)
+                {document.getElementById("voice").value = "Stop Voice!";a=0;
+                }
+                else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+                }
+            }
+
+        </script>
+
+
+
+        <div class="data">
+            <br>
+           
+                
+            <h2>
+                About Recipe:
+            </h2>
+
+            <p>
+                Panipuri, fuchka, phuchka, gupchup, golgappa, or pani ke patashe is a type of snack originating in the Indian subcontinent, where it is an extremely common street food. 
+            </p>
+
+
+
+            <h2>
+                Basic Requirements:
+            </h2>
+
+            <p>
+                Combine all the ingredients together adding 2 cups of water.
+<br><br>
+Adjust the salt and seasonings to suit your taste of the pani mixture
+<br><br>
+Refrigerate the pani mixture until you are ready to serve.  
+<br>Combine all the ingredients for the pani puri in a large bowl.
+<br>
+Stir all the ingredients together for the pani puri filling, check the salt and spices and adjust to suit your taste. Transfer the pani puri filling to a serving dish and keep aside. This can be refrigerated until you are ready to serve.
+            </p>
+
+
+
+        
+
+
+            <h2>
+                Steps:
+            </h2>
+
+
+
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("2 sprig Mint Leaves (Pudina) , finely chopped");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("3 sprig Coriander (Dhania) Leaves , finely chopped.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1/2 teaspoon Red Chilli powder");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("1 cup Tamarind Water");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon Cumin powder (Jeera) ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon Rock Salt");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon Chaat Masala Powder");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1/2 cup Kala Chana (Brown Chickpeas) ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("2 Potatoes (Aloo)");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1/2 teaspoon Red Chilli powder");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon Rock Salt");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon Muri Masala ,");
+                    speechSynthesis.speak(utterance);
+                    
+                }
+            </script>
+            <pre>
+        
+            
+            <input type="checkbox" id="check1"><label for="check1">2 sprig Mint Leaves (Pudina) , finely chopped.</label> 
+            <input type="checkbox" id="check2"><label for="check2">3 sprig Coriander (Dhania) Leaves , finely chopped.</label> 
+            <input type="checkbox" id="check3"><label for="check3">1/2 teaspoon Red Chilli powder.</label> 
+            <input type="checkbox" id="check4"><label for="check4">1 cup Tamarind Water.</label>                 
+            <input type="checkbox" id="check5"><label for="check5">1 teaspoon Cumin powder (Jeera).</label> 
+            <input type="checkbox" id="check6"><label for="check6">1 teaspoon Rock Salt.</Label> 
+            <input type="checkbox" id="check7"><label for="check7">1 teaspoon Chaat Masala Powder.</label>  
+            <input type="checkbox" id="check8"><label for="check8">1/2 cup Kala Chana (Brown Chickpeas).</label> 
+            <input type="checkbox" id="check9"><label for="check9">2 Potatoes (Aloo).</label> 
+            <input type="checkbox" id="check10"><label for="check10">1/2 teaspoon Red Chilli powder.</label> 
+            <input type="checkbox" id="check11"><label for="check11">1 teaspoon Rock Salt.</label> 
+            <input type="checkbox" id="check12"><label for="check12">1 teaspoon Muri Masala.</label> 
+ 
+
+          </p>
+
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+    </div>
+    
+
+    <a href="/Recipies-doc/Recipe-5/recipe-5.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-7/recipe-7.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+   
+    background-image: url("back.gif");
+}
+button{
+    background-color: rgb(255, 231, 255);
+    color: black;
+    border-style: double;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgba(89, 0, 255, 0.322);
+    transition: 1s;
+}
+.div{
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    border-style: inset;
+    border-width: 10px;
+    border-radius: 10px;
+    background: rgba(65, 35, 238, 0.445);
+    border-color: rgba(5, 59, 236, 0.514);
+}
+h1{
+    margin-left: 370px;
+    margin-right: 350px;
+    text-decoration: underline;
+    color: black;
+}
+img{
+    width: 300px;
+    margin-left: 280px;
+   border-style: solid  ;
+   border-radius: 5px;
+   border-color: rgb(20, 134, 240);
+   
+}
+.data{
+    border-color: rgb(111, 0, 255);
+}

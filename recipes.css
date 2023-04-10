@@ -1,0 +1,134 @@
+body{
+    background-color: rgba(0, 102, 255, 0.626);
+    animation: back 10s linear infinite ;
+}
+
+
+@keyframes back {
+    0%{
+        background-color: rgb(42, 110, 165);
+        
+    }
+
+    20%{
+        background-color: rgb(42, 147, 165);
+        
+    }
+
+    40%{
+        background-color: rgb(42, 106, 165);
+       
+    }
+
+    60%{
+        background-color: rgb(42, 75, 165);
+       
+    }
+    80%{
+        background-color: rgb(42, 50, 165);
+        
+    }
+    100%{
+        background-color: rgb(42, 110, 165);
+      
+    }
+  
+}
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(240, 248, 255, 0.219);
+    border-radius: 50px;
+}
+
+.item{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    background-color: rgba(240, 248, 255, 0.356);
+    border-style: solid;
+    border-color: rgba(240, 248, 255, 0.705);
+    animation: change 10s linear infinite ;
+}
+
+
+
+
+@keyframes change {
+    0%{
+        border-color: rgb(255, 255, 255);
+        
+    }
+
+    20%{
+        border-color: rgb(205, 205, 207);
+    }
+
+    40%{
+        border-color: rgb(136, 136, 138);
+       
+    }
+
+    60%{
+        border-color: rgb(136, 136, 138);
+       
+    }
+    80%{
+        border-color: rgb(205, 205, 207);
+        
+    }
+    100%{
+        border-color: rgb(255, 255, 255);
+      
+    }
+  
+}
+
+
+
+
+.item:hover{
+    background-color: rgba(255, 255, 0, 0.37);
+}
+
+label{
+    text-decoration: underline;
+}
+
+img{
+    margin-left: 5%;
+    /* margin-right: 5%; */
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 200px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+img:hover{
+    color: yellow;
+}
+
+#end{
+    border: none;
+    mix-blend-mode: multiply;
+    margin-left: 40%;
+    /* margin-right: auto; */
+}
+
+*{
+    text-justify: kashida;
+    font-style: oblique;
+   
+}
+
+button{
+    border-radius: 100px;
+    color: rgb(128, 0, 248);
+    background-color: rgb(255, 192, 203);
+}
+
+#t1:hover{
+    background-color: rgba(240, 248, 255, 0);
+}

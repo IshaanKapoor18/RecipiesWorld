@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-4.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+    <script src="/Recipies-doc/Recipe-1/recipe1.js"></script>
+</head>
+<body>
+    <button onclick="work()"><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+
+    <div class="div">
+        <div class="head">
+            <h1>Samosa</h1>
+        </div>
+        <img src="first.jpg" alt="Dhosa pic">
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+speechSynthesis.cancel();
+let utterance = new SpeechSynthesisUtterance("A samosa or singara is a fried South Asian pastry with a savoury filling, including ingredients such as spiced potatoes, onions, and peas. ");
+speechSynthesis.speak(utterance);
+
+utterance = new SpeechSynthesisUtterance("");
+speechSynthesis.speak(utterance);
+if(a == 1)
+{document.getElementById("voice").value = "Stop Voice!";a=0;
+}
+else if(a == 0){
+    document.getElementById("voice").value = "Start Voice";a=1;
+    speechSynthesis.cancel();
+}
+}
+
+         </script>
+        <div class="data">
+            <br>
+           
+                
+            <h2>
+                About Recipe:
+            </h2>
+            <p>
+                
+                A samosa (/səˈmoʊsə/) or singara is a
+                fried South Asian pastry with a savoury 
+                filling, including ingredients such as spiced
+                potatoes, onions, and peas. It may take different 
+                forms, including triangular, cone, or half-moon 
+                shapes, depending on the region. Samosas are often 
+                accompanied by chutney, and have origins in medieval 
+                times or earlier. Samosas are a popular entrée, 
+                appetizer, or snack in the cuisines of South Asia, 
+                the Middle East, Central Asia, East Africa and their 
+                South Asian diasporas.
+            </p>
+
+            <h2>
+                Basic Requirements:
+            </h2>
+
+            <p class="test">
+                2 cup all purpose flour <br>
+                1 teaspoon cumin seeds <br>
+                1 teaspoon crushed ginger <br>
+                1 teaspoon raisins <br>
+                5 boiled potato <br>
+                1 teaspoon coriander powder <br>
+                1 teaspoon red chilli powder <br>
+                1 teaspoon kasoori methi leaves <br>
+                1 teaspoon carom seeds <br>
+                1/4 cup water <br>
+                2 cup refined oil <br>
+                1/2 teaspoon coriander seeds <br>
+                1 teaspoon green chilli <br> 
+                1 teaspoon cashews <br>
+                1 teaspoon cumin powder <br>
+                1/2 teaspoon garam masala powder <br>
+                salt as required <br>
+                1 teaspoon coriander leaves <br>
+                2 tablespoon ghee <br>
+                1 handful raw peanuts <br>
+            </pre>
+
+            <h2>
+                Instructions:
+            </h2>
+            
+            <p>
+                To make samosas cripsy, make sure you knead a tight or stiff dough as the soft dough will not yield best results.
+Before kneading the dough, keep it in mind that you do not need to overwork it and mix the oil with flour at least 5-6 times. This will ensure you have crispy samosas.
+You should keep aside the dough for at least 40-60 minutes for best results.
+While rolling the dough ball, keep it thin and do not use any flour in it. You can use a little oil to roll the ball evenly.
+Always fry the samosas on low flame irrespective of how much time it is taking to fry. This will also ensure that your samosas are blisters free and cooked from inside.
+            </p>
+            <h2>
+                Steps:
+            </h2>
+            
+
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Sauté cumin seeds for potato filling");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add spices and boiled potatoes and cook for a while");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Roll the dough in small puris and cut into half");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Fill the semi-circle with potato filling and deep fry");
+                    speechSynthesis.speak(utterance);
+
+                    
+                }
+            </script>
+
+<pre>
+        
+    
+    <input type="checkbox" id="check1"><label for="check1">Sauté cumin seeds for potato filling.</label> 
+    <input type="checkbox" id="check2"><label for="check2">Add spices and boiled potatoes and cook for a while.</label> 
+    <input type="checkbox" id="check3"><label for="check3">Roll the dough in small puris and cut into half.</label> 
+    <input type="checkbox" id="check4"><label for="check4">Fill the semi-circle with potato filling and deep fry.</label>                 
+     
+
+  </p>
+
+        
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+
+    </div>
+    
+    <a href="/Recipies-doc/Recipe-3/recipe-3.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-5/recipe-5.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

@@ -1,0 +1,6 @@
+function work(){
+
+        speechSynthesis.cancel();
+       
+    
+}

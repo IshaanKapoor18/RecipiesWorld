@@ -1,0 +1,53 @@
+body{
+    background-image: url(./Logo-Rec-icon/Back-desc.jpg);
+    
+}
+button{
+    background-color: rgb(255, 231, 255);
+    color: black;
+    border-style: double;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+h1{
+    text-shadow: 5px 5px 10px black;
+}
+
+.desc{
+    /* background: transparent url(./Logo-Rec-icon/icon-homepage.png) top left repeat; */
+    background-color: white;
+    /* opacity: .6; */
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-color: rgba(255, 255, 255);
+    border-width: 20px;
+    border-radius: 50px;
+}
+
+p{
+    color: rgb(59, 58, 58);
+    margin-right: 100px;
+}
+.para{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#img1{
+    margin-left: 35%;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    filter: contrast(1);
+}
+
+.end{
+    opacity: 0.5;
+    margin-left: 35%;
+    mix-blend-mode: multiply;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch mini</title>
+    <!-- <link rel="stylesheet" href="side.css"> -->
+    <link rel="stylesheet" href="side.css">
+</head>
+<body>
+    <div class="outer">
+        <h id="head">Stop Watch</h>
+    <h1 id="display">00:00:00</h1>
+            <div class="button">
+                <button onclick="start()">Start</button>
+                <button onclick="stop()">Stop</button>
+                <button onclick="reset()">Re-Set</button>
+            </div>
+
+    </div>
+            <script>
+                let [s, m, h] = [0, 0, 0];
+                let time = document.getElementById("display");
+                let current = null;
+    
+                function watch(){
+                    s++;
+                    if(s == 60){
+                        s=0;
+                        m++;
+                        if(m==60){
+                            m=0;
+                            h++;
+                        }
+                    }
+                    
+                    let h1 = h<10 ? "0" +h :h;
+                    let m1 = m<10 ? "0" +m :m;
+                    let s1 = s<10 ? "0" +s :s;
+    
+                    time .innerHTML = h1 + ":" + m1 + ":" +s1 ; 
+                }
+    
+                function start(){
+                    if(current!=null){
+                        clearInterval(current);
+                    }
+                    current = setInterval(watch, 1000)
+                }
+    
+                function stop(){
+                    clearInterval(current);
+                }
+    
+                function reset(){
+                    clearInterval(current);
+                    [s, m, h] = [0, 0, 0];
+                    display.innerHTML= "00:00:00";
+                }
+    
+            </script>
+</body>
+</html>

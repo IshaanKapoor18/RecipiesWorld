@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chow mein</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-9.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+</head>
+<body>
+    <button><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Chow mein</h1>
+        </div>
+        <img src="first.jpg" alt="Chow mein pic">
+    
+
+        <br>
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+            speechSynthesis.cancel();
+            let utterance = new SpeechSynthesisUtterance("Chow mein is a Chinese dish made from stir-fried noodles with vegetables and sometimes meat or tofu. Over the centuries, variations of chǎomiàn were developed in many regions of China; there are several methods of frying the noodles and a range of toppings can be used.");
+            speechSynthesis.speak(utterance);
+            if(a == 1)
+            {document.getElementById("voice").value = "Stop Voice!";a=0;
+            }
+            else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+            }
+        }
+
+         </script>
+
+
+
+
+        <div class="data">
+            <h2>
+                About Recipe:
+            </h2>
+            <p>
+                Chow mein is a Chinese dish made from stir-fried noodles with vegetables and sometimes meat or tofu. Over the centuries, variations of chǎomiàn were developed in many regions of China; there are several methods of frying the noodles and a range of toppings can be used.
+            </p>
+
+
+            <h2>
+                Instruction:
+            </h2>
+
+            <p>
+                Making chowmein recipe at home is actually quite easy, as this recipe will soon show. It is also entirely customizable based on your needs. If you are gluten-free, simply swap in gluten-free noodles of your choice and opt for tamari or coconut aminos in place of the soy sauce.
+
+You can also swap in your own favorite assortment of vegetables, making this a lovely recipe for cleaning out your crisper drawer at the end of the week.
+
+If you are looking for an easy way to get your kids to eat more veggies, this chow mein recipe is a great place to start. For a healthier option I recommend using whole wheat noodles or buckwheat noodles.
+            </p>
+            <h2>
+                Steps:
+            </h2>
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Bring 5 cups of water to a boil. Add ¼ teaspoon salt to the water.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add 150 to 200 grams noodles.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Cook the noodles according to package directions.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance(" Allow the noodles to cook until tender and softened. ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add 1 to 2 teaspoons of toasted sesame oil to the noodles.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("While the noodles are cooking, chop and grate the veggies.");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("Prepare cornflour (aka cornstarch) slurry with 2 teaspoons cornflour and 2 tablespoons water.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("2 to 3 teaspoons finely chopped green chilies");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon finely chopped ginger");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add ⅓ cup finely chopped onions. ");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("¾ cup grated or shredded carrots");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("¼ cup thinly sliced capsicum (bell pepper) ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance(" Add ½ teaspoon black pepper ");
+                    speechSynthesis.speak(utterance);
+
+                    
+                }
+            </script>
+            <pre>
+        
+         
+            <input type="checkbox" id="check1"><label for="check1">Bring 5 cups of water to a boil. </label> 
+            <input type="checkbox" id="check2"><label for="check2">Add 150 to 200 grams noodles.</label> 
+            <input type="checkbox" id="check3"><label for="check3">Cook the noodles according to package directions.</label> 
+            <input type="checkbox" id="check4"><label for="check4">Allow the noodles to cook until tender and softened. </label>                 
+            <input type="checkbox" id="check5"><label for="check5">Add 1 to 2 teaspoons of toasted sesame oil to the noodles.</label> 
+            <input type="checkbox" id="check6"><label for="check6">While the noodles are cooking, chop and grate the veggies.</Label> 
+            <input type="checkbox" id="check7"><label for="check7">Prepare cornflour slurry with 2 teaspoons cornflour  </label>  
+            <input type="checkbox" id="check8"><label for="check8">2 tablespoons water.</label> 
+            <input type="checkbox" id="check9"><label for="check9">Add ¼ teaspoon salt to the water.</label> 
+            <input type="checkbox" id="check10"><label for="check10">2 to 3 teaspoons finely chopped green chilies</label> 
+            <input type="checkbox" id="check11"><label for="check11">1 teaspoon finely chopped ginger</label> 
+            <input type="checkbox" id="check12"><label for="check12">Add ⅓ cup finely chopped onions. </label> 
+            <input type="checkbox" id="check13"><label for="check13">¾ cup grated or shredded carrots</label> 
+            <input type="checkbox" id="check14"><label for="check14">1 teaspoon finely chopped celery, optional</label>  
+            <input type="checkbox" id="check15"><label for="check15">¼ cup thinly sliced capsicum (bell pepper) </label>  
+            <input type="checkbox" id="check16"><label for="check16"> Add ½ teaspoon black pepper </label> 
+            <input type="checkbox" id="check17"><label for="check17">Stir and quickly toss the noodles with the veggie mixture.</label>  
+            <input type="checkbox" id="check18"><label for="check18">Lastly, add ½ teaspoon rice vinegar </label>  
+            <input type="checkbox" id="check19"><label for="check19">give a final mix to chowmein.</label>  
+
+          </p>
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+
+
+    </div>
+
+    
+    <a href="/Recipies-doc/Recipe-8/recipe-8.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-10/recipe-10.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

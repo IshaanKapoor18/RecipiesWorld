@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahi vada</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-7.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+</head>
+<body>
+    <button><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Dahi vada</h1>
+        </div>
+        <img src="first.jpg" alt="Dahi vada pic">
+        
+
+        <br>
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+            speechSynthesis.cancel();
+            let utterance = new SpeechSynthesisUtterance("Dahi vada is a type of chaat originating from the Indian state of Maharashtra. It is prepared by soaking vadas in thick dahi.");
+            speechSynthesis.speak(utterance);
+            if(a == 1)
+            {document.getElementById("voice").value = "Stop Voice!";a=0;
+            }
+            else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+            }
+        }
+
+         </script>
+
+        <div class="data">
+            <h2>
+                About Recipe:
+            </h2>
+                <p>
+                    Dahi vada is a type of chaat originating from the Indian state of Maharashtra. It is prepared by soaking vadas in thick dahi.
+                </p>
+
+            <h2>
+                Instruction:
+            </h2>
+
+                <p>
+                    While dahi vada do require some time to make, you’ll quickly see with one taste how very worth every bit of effort they are. And, much of the prep work – like making both of the chutneys and yogurt – can be done well in advance.
+<br><br>
+Follow my step-by-step instructions with photos below to learn how to make the best traditional, authentic dahi vada recipe from scratch, with tips to ensure they turn out terrific every time.
+
+
+                </p>
+
+            <h2>
+                Steps:
+            </h2>
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Soak 1 cup heaped urad dal (200 grams husked and split black lentils) ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Then add the drained and soaked lentils in your trusted blender");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("½ teaspoon chopped green chilies or serrano/thai chillies");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon chopped ginger");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon cumin seeds");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 pinch of asafoetida (hing)");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("Blend or grind adding ¼ cup to ½ cup water");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Take the ground batter in a bowl with a help of a silicon spatula. ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Stir in 1 tablespoon raisins (chopped) and 12 to 15 cashews");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Heat oil as needed for deep frying in a kadai (Indian wok) or pan.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Fry Vada");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Wait for 2 to 3 minutes and while they are still hot");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("2 to 3 tablespoons of water or as needed");
+                    speechSynthesis.speak(utterance);
+
+                    
+                }
+            </script>
+            <pre>
+        
+         
+            <input type="checkbox" id="check1"><label for="check1">Soak 1 cup heaped urad dal (200 grams husked and split black lentils).</label> 
+            <input type="checkbox" id="check2"><label for="check2">Add the drained and soaked lentils in your trusted blender.</label> 
+            <input type="checkbox" id="check3"><label for="check3">½ teaspoon chopped green chilies or serrano/thai chillies.</label> 
+            <input type="checkbox" id="check4"><label for="check4">1 teaspoon chopped ginger.</label>                 
+            <input type="checkbox" id="check5"><label for="check5">1 teaspoon cumin seeds.</label> 
+            <input type="checkbox" id="check6"><label for="check6">1 pinch of asafoetida (hing).</Label> 
+            <input type="checkbox" id="check7"><label for="check7">Blend or grind adding ¼ cup to ½ cup water.</label>  
+            <input type="checkbox" id="check8"><label for="check8">Take the ground batter in a bowl with a help of a silicon spatula.</label> 
+            <input type="checkbox" id="check9"><label for="check9">Stir in 1 tablespoon raisins (chopped) and 12 to 15 cashews.</label> 
+            <input type="checkbox" id="check10"><label for="check10">Heat oil as needed for deep frying in a kadai (Indian wok) or pan.</label> 
+            <input type="checkbox" id="check11"><label for="check11">Fry Vada.</label> 
+            <input type="checkbox" id="check12"><label for="check12">Wait for 2 to 3 minutes and while they are still hot.</label> 
+            <input type="checkbox" id="check13"><label for="check13">Beat 2.5 cups chilled curd (yogurt) until smooth.</label> 
+            <input type="checkbox" id="check14"><label for="check14">2 cups coriander leaves (cilantro).</label>  
+            <input type="checkbox" id="check15"><label for="check15">½ to 1 teaspoon dry mango powder (amchur powder)</label>  
+            <input type="checkbox" id="check16"><label for="check16">½ teaspoon chopped garlic</label> 
+            <input type="checkbox" id="check17"><label for="check17">1 teaspoon chopped green chillies</label>  
+            <input type="checkbox" id="check18"><label for="check18">½ teaspoon cumin seeds or cumin powder</label>  
+            <input type="checkbox" id="check19"><label for="check19">2 to 3 tablespoons of water or as needed</label>  
+
+          </p>
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0" ></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+    </div>
+
+    <a href="/Recipies-doc/Recipe-6/recipe-6.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space" ></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-8/recipe-8.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

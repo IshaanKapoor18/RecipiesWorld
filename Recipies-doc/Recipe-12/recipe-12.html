@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushrooms</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-12.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+</head>
+<body>
+    <button><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    <div class="div">
+        <div class="head">
+            <h1>Mushrooms</h1>
+        </div>
+        <img src="first.jpg" alt="Mushrooms pic">
+    
+
+        <br>
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+            speechSynthesis.cancel();
+            let utterance = new SpeechSynthesisUtterance("Mushrooms are made every week at my home. I simply adore the tender texture and savory, earthy flavor of mushrooms, and have posted many Mushroom Recipes on the blog like Mushroom 65 and Mushroom Manchurian.");
+            speechSynthesis.speak(utterance);
+            if(a == 1)
+            {document.getElementById("voice").value = "Stop Voice!";a=0;
+            }
+            else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+            }
+        }
+
+         </script>
+
+
+        <div class="data">
+            <h2>
+                About Recipe:
+            </h2>
+            <p>
+                Mushrooms are made every week at my home. I simply adore the tender texture and savory, earthy flavor of mushrooms, and have posted many Mushroom Recipes on the blog – like Mushroom 65 and Mushroom Manchurian.
+
+Dry chilli mushroom is one of my favorite snack recipes. Fresh pieces of mushrooms are lightly battered and shallow fried to golden brown. They are sautéed with vibrant aromatics and spicy green chiles, then served piping hot and crispy – to be enjoyed with your favorite dipping sauce.
+
+In fact these are so good, you can fill them in a tortilla or roti to make Burrito or a wrap with an assortment of flavorful toppings or make sandwiches, sliders or burgers. They are so delicious.
+            </p>
+
+            
+
+
+            <h2>
+                Steps:
+            </h2>
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Rinse or wipe dry the 200 to 250 grams button mushrooms.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add ¼ to ⅓ cup of water.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Whisk to combine so that you have a flowing medium-consistency batter.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Fry until one side becomes crisp and light golden. ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Stir fry on medium or high heat for a minute to soften.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add 1 teaspoon finely chopped ginger");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("2 teaspoon finely chopped garlic ");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("2 to 3 green chilies that have been slit or sliced.");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                }
+            </script>
+            <pre>
+        
+         
+            <input type="checkbox" id="check1"><label for="check1">Rinse or wipe dry the 200 to 250 grams button mushrooms.</label> 
+            <input type="checkbox" id="check2"><label for="check2">Trim the stalks and quarter the mushrooms if larger in size.</label> 
+            <input type="checkbox" id="check3"><label for="check3">Add 5 to 6 tablespoons whole wheat flour</label> 
+            <input type="checkbox" id="check4"><label for="check4">Season with ¼ to ½ teaspoon crushed black pepper and salt to taste.</label>                 
+            <input type="checkbox" id="check5"><label for="check5">Add ¼ to ⅓ cup of water.</label> 
+            <input type="checkbox" id="check6"><label for="check6">Whisk to combine so that you have a flowing medium-consistency batter.</Label> 
+            <input type="checkbox" id="check7"><label for="check7">Heat oil for shallow frying in a kadai, deep pan, or wok. </label>  
+            <input type="checkbox" id="check8"><label for="check8">Fry until one side becomes crisp and light golden. </label> 
+            <input type="checkbox" id="check9"><label for="check9">Stir fry on medium or high heat for a minute to soften.</label> 
+            <input type="checkbox" id="check10"><label for="check10">Add 1 teaspoon finely chopped ginger</label> 
+            <input type="checkbox" id="check11"><label for="check11">2 teaspoon finely chopped garlic </label> 
+            <input type="checkbox" id="check12"><label for="check12">2 to 3 green chilies that have been slit or sliced.</label> 
+            <input type="checkbox" id="check13"><label for="check13">Reduce the heat and add 1 tablespoon soy sauce</label> 
+         
+
+          </p>
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+                <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+                <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+                
+    </div>
+
+
+    <br>
+    
+    <a href="/Recipies-doc/Recipe-11/recipe-11.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-1/recipe-1.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+
+</body>
+</html>

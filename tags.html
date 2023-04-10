@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+    <link rel="stylesheet" href="recipes.css">
+    
+    <!-- <script src="/welcome.js"></script> -->
+    <script src="/tag.js"></script>
+</head>
+<body >
+
+    <style>
+        
+                    img{
+                        margin-left: 5%;
+                        /* margin-right: 5%; */
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                        width: 200px;
+                        border-radius: 5px;
+                        border-style: solid;
+                    }
+
+                    img:hover{
+                        color: yellow;
+                    }
+
+                    button:hover{
+                        background-color: red;
+                        color: aliceblue;
+                    }
+
+    </style>
+
+
+    <button onclick="end()"><a href="index.html"><label for="button">home
+    </label></a></button>
+
+    <div class="desc">
+        <h1 style="text-decoration: underline;">Choose any filter:</h1>
+        
+        <button onclick="reset()">All</button>
+        <button onclick="c()">Chinese</button>
+        <button onclick="s()">South indian</button>
+        <button onclick="b()">Breakfast</button>
+        <button onclick="h()">Healthy</button>
+        <button onclick="m()">5 minutes ready</button>
+        <button onclick="sf()">Street food</button>
+        <!-- <div class="para">
+        
+
+        </div> -->
+        <div id="data">
+
+            <!-- <a href="/Recipies-doc/Recipe-1/recipe-1.html">
+                <span title="Dhosa">
+                <img src="/Logo-Rec-icon/Recipes/recipe1.jpg" alt="dhosa"
+                id="r1">
+                </span>
+            </a>
+        </div> -->
+
+
+        
+        <h1 id="check" style="margin-left: 2%;text-decoration: underline;">All:</h1>
+           
+                    <div class="item" id="data1" onmouseover="recipes1()"
+                    style="margin-bottom: 5%;margin-top: 5%;">
+                        <table>
+                            <thead>
+                                <th><a href="/Recipies-doc/Recipe-1/recipe-1.html"><img src="/Logo-Rec-icon/Recipes/recipe1.jpg" alt="" id="img1"></a>
+                                    <label for="img1">Dhosa</label>
+                                </th>
+                                <th>A dosa, also called dosai, dosey,
+                                    dwashi or dosha is a thin pancake 
+                                    in South Indian cuisine made from a 
+                                    fermented batter of ground black lentils
+                                     and rice. Dosas are popular in South Asia
+                                      as well as around the world. Dosas are served
+                                       hot, often with chutney and sambar.</th>
+                            </thead>
+                        </table>
+                    </div>
+         
+
+
+
+
+               
+                    <div class="item" id="data2" onmouseover="recipes2()"
+                    style="margin-bottom: 5%;margin-top: 5%;">
+                        <table>
+                            <thead>
+                                <th><a href="/Recipies-doc/Recipe-2/recipe-2.html"><img src="/Logo-Rec-icon/Recipes/recipe2.jpg" alt="" id="img1"></a>
+                                    <label for="img1">Pav bhaji</label>
+                                </th>
+                                <th> 
+                                    Pav bhaji is a spiced mixture of mashed
+                                    vegetables in a thick gravy served with
+                                    bread. Vegetables in the curry may commonly
+                                    include potatoes, onions, carrots, chillies,
+                                    peas, bell peppers and tomatoes. Street sellers 
+                                    usually cook the curry on a flat griddle (tava) 
+                                    and serve the dish hot. A soft white bread roll 
+                                    is the usual accompaniment to the curry, but this
+                                        does not preclude the use of other bread varieties
+                                        such as chapati, roti or brown bread.
+                                    The dish originated as a fast lunchtime dish for textile mill workers in Mumbai.
+                                    Pav bhaji was later served at restaurants throughout the city.
+                                     Pav bhaji is now offered at outlets from simple hand carts to formal
+                                      restaurants in India and abroad.
+                                    </th>
+                            </thead>
+                        </table>
+                    </div>
+               
+                
+
+
+
+
+                
+               
+                    <div class="item" id="data3" onmouseover="recipes3()"
+                    style="margin-bottom: 5%;margin-top: 5%;">
+                        <table>
+                            <thead>
+                                <th><a href="/Recipies-doc/Recipe-3/recipe-3.html"><img src="/Logo-Rec-icon/Recipes/recipe3.jpg" alt="" id="img1"></a>
+                                    <label for="img1">Paneer tikka</label>
+                                </th>
+                                <th>Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora.</th>
+                            </thead>
+                        </table>
+                    </div>
+               
+
+
+
+
+
+               
+                    <div class="item" id="data4" onmouseover="samosa()"
+                    style="margin-bottom: 5%;margin-top: 5%;">
+                        <table>
+                            <thead>
+                                <th><a href="/Recipies-doc/Recipe-4/recipe-4.html"><img src="/Logo-Rec-icon/Recipes/recipe4.jpg" alt="" id="img1"></a>
+                                    <label for="img1">Samosa</label>
+                                </th>
+                                <th>A samosa (/səˈmoʊsə/) or singara is a
+                                    fried South Asian pastry with a savoury 
+                                    filling, including ingredients such as spiced
+                                    potatoes, onions, and peas.It may take different 
+                                    forms, including triangular, cone, or half-moon 
+                                    shapes, depending on the region. Samosas are often 
+                                    accompanied by chutney, and have origins in medieval 
+                                    times or earlier. Samosas are a popular entrée, 
+                                    appetizer, or snack in the cuisines of South Asia, 
+                                    the Middle East, Central Asia, East Africa and their 
+                                    South Asian diasporas.</th>
+                            </thead>
+                        </table>
+                    </div>
+               
+
+
+
+
+
+
+
+
+
+               
+                <div class="item" id="data5" onmouseover="recipes5()"
+                style="margin-bottom: 5%;margin-top: 5%;">
+                    <table>
+                        <thead>
+                            <th><a href="/Recipies-doc/Recipe-5/recipe-5.html"><img src="/Logo-Rec-icon/Recipes/recipe5.jpg" alt="" id="img1"></a>
+                                <label for="img1">Dhokla</label>
+                            </th>
+                            <th>Dhokla is a savoury sponge dish that is native to the Indian state of Gujarat and parts of adjacent states, and is popular throughout the country. It is made with a fermented batter that is steamed to a cake-like consistency.</th>
+                        </thead>
+                    </table>
+                </div>
+           
+
+
+
+
+
+           
+                <div class="item" id="data6" onmouseover="recipes6()"
+                style="margin-bottom: 5%;margin-top: 5%;">
+                    <table>
+                        <thead>
+                            <th><a href="/Recipies-doc/Recipe-6/recipe-6.html"><img src="/Logo-Rec-icon/Recipes/recipe6.jpg" alt="" id="img1"></a>
+                                <label for="img1">Puchka</label>
+                            </th>
+                            <th>Panipuri, fuchka, phuchka, gupchup, golgappa, or pani ke patashe is a type of snack originating in the Indian subcontinent, where it is an extremely common street food. </th>
+                        </thead>
+                    </table>
+                </div>
+           
+
+
+
+
+
+            
+
+           
+                <div class="item" id="data7" onmouseover="recipes7()"
+                style="margin-bottom: 5%;margin-top: 5%;">
+                    <table>
+                        <thead>
+                            <th><a href="/Recipies-doc/Recipe-7/recipe-7.html"><img src="/Logo-Rec-icon/Recipes/recipe7.jpg" alt="" id="img1"></a>
+                               <br><label for="img1">Dahi vada</label>
+                            </th>
+                            <th>&nbsp;
+                                Dahi vada is a type of chaat originating from the Indian state of Maharashtra. It is prepared by soaking vadas in thick dahi.</th>
+                        </thead>
+                    </table>
+                </div>
+            
+
+          
+
+
+
+
+            
+
+            
+                <div class="item" id="data8" onmouseover="recipes8()"
+                style="margin-bottom: 5%;margin-top: 5%;">
+                    <table>
+                        <thead>
+                            <th><a href="/Recipies-doc/Recipe-8/recipe-8.html"><img src="/Logo-Rec-icon/Recipes/recipe8.jpg" alt="" id="img1"></a>
+                                <label for="img1">Papri chat</label>
+                            </th>
+                            <th>Papri chat or papri chaat is a popular traditional fast food and street food from the Indian subcontinent, in India, Bangladesh, Nepal and parts of Pakistan. Many various additional dishes throughout India are also referred to as papri chat. </th>
+                        </thead>
+                    </table>
+                </div>
+            
+
+
+
+
+        
+            <div class="item" id="data9" onmouseover="recipes9()"
+            style="margin-bottom: 5%;margin-top: 5%;">
+                <table>
+                    <thead>
+                        <th><a href="/Recipies-doc/Recipe-9/recipe-9.html"><img src="/Logo-Rec-icon/Recipes/recipe9.jpg" alt="" id="img1"></a>
+                            <label for="img1">Chow mein</label>
+                        </th>
+                        <th>Chow mein is a Chinese dish made from stir-fried noodles with vegetables and sometimes meat or tofu. Over the centuries, variations of chǎomiàn were developed in many regions of China; there are several methods of frying the noodles and a range of toppings can be used.</th>
+                    </thead>
+                </table>
+            </div>
+        
+
+
+
+        
+            <div class="item" id="data10" onmouseover="recipes10()"
+            style="margin-bottom: 5%;margin-top: 5%;">
+                <table>
+                    <thead>
+                        <th><a href="/Recipies-doc/Recipe-10/recipe-10.html"><img src="/Logo-Rec-icon/Recipes/recipe10.jpg" alt="" id="img1"></a>
+                            <label for="img1">Bhaji</label>
+                        </th>
+                        <th>A bhaji is a type of fritter originating from the Indian subcontinent. It is made from spicy hot vegetables, commonly onion, and has several variants. It is a popular snack food in India,  and it can be found for sale in street-side stalls, especially in tapris and dhabas. </th>
+                    </thead>
+                </table>
+            </div>
+        
+
+
+
+
+        
+            <div class="item" id="data11" onmouseover="recipes11()"
+            style="margin-bottom: 5%;margin-top: 5%;">
+                <table>
+                    <thead>
+                        <th><a href="/Recipies-doc/Recipe-11/recipe-11.html"><img src="/Logo-Rec-icon/Recipes/recipe11.jpg" alt="" id="img1"></a>
+                            <label for="img1">Bread pakoda</label>
+                        </th>
+                        <th>In English you can simply call Bread Pakora as Bread Fritters. Note that these are savory fritters and not sweet. Bread Pakora is the North Indian term while bread bajji is a South Indian term.
+
+                            A simple bread pakoda would have halved bread slices dipped and coated in gram flour batter and deep fried.
+                            
+                            In fact my fond memories of bread pakoda are of course having them piping hot on street-side carts in Mumbai and also having these made by my mother-in-law for weekend breakfasts.
+                            </th>
+                    </thead>
+                </table>
+            </div>
+        
+
+
+
+
+
+
+        
+            <div class="item" id="data12" onmouseover="recipes12()"
+            style="margin-bottom: 5%;margin-top: 5%;">
+                <table>
+                    <thead>
+                        <th><a href="/Recipies-doc/Recipe-12/recipe-12.html"><img src="/Logo-Rec-icon/Recipes/recipe12.jpg" alt="" id="img1"></a>
+                            <label for="img1">Mushrooms</label>
+                        </th>
+                        <th>Mushrooms are made every week at my home. I simply adore the tender texture and savory, earthy flavor of mushrooms, and have posted many Mushroom Recipes on the blog – like Mushroom 65 and Mushroom Manchurian.
+
+                            Dry chilli mushroom is one of my favorite snack recipes. Fresh pieces of mushrooms are lightly battered and shallow fried to golden brown. They are sautéed with vibrant aromatics and spicy green chiles, then served piping hot and crispy – to be enjoyed with your favorite dipping sauce.
+                            
+                            In fact these are so good, you can fill them in a tortilla or roti to make Burrito or a wrap with an assortment of flavorful toppings or make sandwiches, sliders or burgers. They are so delicious.
+                            </th>
+                    </thead>
+                </table>
+            </div>
+        
+
+
+
+
+        <br>
+    </div>
+    
+</body>
+</html>

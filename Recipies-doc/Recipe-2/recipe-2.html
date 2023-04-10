@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pav bhaji#2</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-2.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+    <script src="/Recipies-doc/Recipe-1/recipe1.js"></script>
+  
+</head>
+<body>
+    <button onclick="work()"><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Pav bhaji</h1>
+        </div>
+        <img src="first.jpg" alt="Dhosa pic">
+        <input type="submit"  id="voice" 
+        onclick="micStarted()" value="Start Voice">
+
+    <script>
+        a=1;
+        function micStarted(){
+            
+speechSynthesis.cancel();
+let utterance = new SpeechSynthesisUtterance(" The dish originated as a fast lunchtime dish for textile mill workers in Mumbai Pav bhaji was later served at restaurants throughout the city Pav bhaji is now offered at outlets from simple hand carts to formal restaurants in India and abroad.");
+speechSynthesis.speak(utterance);
+
+utterance = new SpeechSynthesisUtterance("Pav bhaji is a spiced mixture of mashed vegetables in a thick gravy served with bread. Vegetables in the curry may commonly include potatoes, onions, carrots, chillies, peas, bell peppers and tomatoes. Street sellers usually cook the curry on a flat griddle (tava) and serve the dish hot. A soft white bread roll is the usual accompaniment to the curry, but this does not preclude the use of other bread varieties such as chapati, roti or brown bread.");
+speechSynthesis.speak(utterance);
+if(a == 1)
+{document.getElementById("voice").value = "Stop Voice!";a=0;
+}
+else if(a == 0){
+    document.getElementById("voice").value = "Start Voice";a=1;
+    speechSynthesis.cancel();
+}
+        }
+    </script>
+
+
+        <div class="data">
+            <br>
+           
+                
+            <h2>
+                About Recipe:
+            </h2>
+
+            <p>
+                The dish originated as a fast lunchtime dish for textile mill workers in Mumbai.
+                 Pav bhaji was later served at restaurants throughout the city.
+                  Pav bhaji is now offered at outlets from simple hand carts to formal
+                   restaurants in India and abroad.
+                   <br><br>
+                   Pav bhaji is a spiced mixture of mashed
+                    vegetables in a thick gravy served with
+                     bread. Vegetables in the curry may commonly
+                      include potatoes, onions, carrots, chillies,
+                       peas, bell peppers and tomatoes. Street sellers 
+                       usually cook the curry on a flat griddle (tava) 
+                       and serve the dish hot. A soft white bread roll 
+                       is the usual accompaniment to the curry, but this
+                        does not preclude the use of other bread varieties
+                         such as chapati, roti or brown bread.
+            </p>
+
+            <h2>
+                Different types of Variants:
+            </h2>
+
+            <p>
+                Cheese pav bhaji, with cheese on top of the bhaji
+Fried pav bhaji, with the pav tossed in the bhaji
+Paneer pav bhaji, with paneer cheese in the bhaji
+Mushroom pav bhaji, with mushrooms in the bhaji
+Khada pav bhaji, with vegetable chunks in the bhaji
+Jain pav bhaji, without onions and garlic and with plantains instead of potatoes
+Kolhapuri pav bhaji, using a spice mix common in Kolhapur.
+            </p>
+
+
+            <h2>
+                Instruction:
+            </h2>
+
+            <p>
+                You can also add veggies that you like, but do not add okra, eggplants, pumpkin, radish, corn, yam or green leafy vegetables.
+            </p>
+            <h2>
+                Steps:
+            </h2>
+            <br>
+            <input type="submit" value="Start Making!" id="voice" onclick="test()" class="check">
+            <script>
+                 function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Rinse, peel and chop the veggies. You will need 1 cup chopped cauliflower, 1 cup chopped carrot, 3 medium sized potatoes (chopped) and ⅓ cup chopped french beans.Note: You can also add veggies that you like, but do not add okra, eggplants, pumpkin, radish, corn, yam or green leafy vegetables.Cabbage, broccoli, zucchini, pumpkin are some unique options that you can consider to add, but the traditional version does not include these veggies.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add all the above chopped veggies in a 3 litre stovetop pressure cooker. Also add 1 cup green peas (fresh or frozen).I have cooked the veggies in a pressure cooker. You can boil or steam them using a pan or in the Instant pot adding water as needed.Add 2.25 to 2.5 cups water.Pressure cook the veggies for 5 to 6 whistles or for about 12 minutes on medium heat.When the pressure settles down on its own, open the cooker and check if the veggies are fork tender, softened and cooked well.You can even steam or cook the veggies in a pan or pot. The vegetables have be to cooked completely and should not be al dente or just about cooked.Set aside the vegetables with the cooked water (broth/stock) in the cooker itself.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add 2.25 to 2.5 cups water.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Pressure cook the veggies for 5 to 6 whistles. check if the veggies are cooked well.Set aside the vegetables with the cooked water (broth/stock).Heat a frying pan or kadai (wok).");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Heat a frying pan or kadai (wok).Add 2 to 3 tablespoons butter.As soon as the butter melts, add 1 teaspoon cumin seeds.Let the cumin seeds crackle and change their color.Then add ½ cup chopped onions and Mix onions with the butter Sauté for 2 to 3 minutes.Add 1 teaspoon turmeric powder and 1 teaspoon chilli powder.Add 2 to 3 tablespoons Pav bhaji Masala Powder.Add 2 tablespoons if the pav bhaji masala .Mix very well.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add 1 teaspoon turmeric powder and 1 teaspoon chilli powder.Add 2 to 3 tablespoons Pav bhaji Masala Powder.Add 2 tablespoons if the pav bhaji masala .Mix very well.Add the cooked veggies.Add all of the stock or water from the pressure cooker.Season with salt according to your taste and give a mix.");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+
+                    
+                }
+            </script>
+
+            <pre>
+        <input type="checkbox" id="check1"><label for="check1">1 cup chopped cauliflower.</label>
+        <input type="checkbox" id="check2"><label for="check2">1 cup chopped carrot.</label>
+        <input type="checkbox" id="check3"><label for="check3">3 medium sized potatoes (chopped).</label>
+        <input type="checkbox" id="check5"><label for="check5">⅓ cup chopped french beans.</label>
+        <input type="checkbox" id="check6"><label for="check6">Add all the above chopped veggies cooker.</label>
+        <input type="checkbox" id="check7"><label for="check7">1 cup green peas (fresh or frozen).</label>
+        <input type="checkbox" id="check8"><label for="check8">Add 2.25 to 2.5 cups water.</label>
+        <input type="checkbox" id="check9"><label for="check9">Pressure cook the veggies for 5 to 6 whistles.</label>
+        <input type="checkbox" id="check10"><label for="check10">check if the veggies are cooked well.</label>
+        <input type="checkbox" id="check11"><label for="check11">Set aside the vegetables with the cooked water (broth/stock).</label>
+        <input type="checkbox" id="check12"><label for="check12">Heat a frying pan or kadai (wok).</label>
+        <input type="checkbox" id="check13"><label for="check13">Add 2 to 3 tablespoons butter.</label>
+        <input type="checkbox" id="check14"><label for="check14">As soon as the butter melts, add 1 teaspoon cumin seeds.</label>
+        <input type="checkbox" id="check15"><label for="check15">Let the cumin seeds crackle and change their color.</label>
+        <input type="checkbox" id="check16"><label for="check16">Then add ½ cup chopped onions and Mix onions with the butter</label>
+        <input type="checkbox" id="check17"><label for="check17">Sauté for 2 to 3 minutes.</label>
+        <input type="checkbox" id="check18"><label for="check18">Add 1 teaspoon turmeric powder and 1 teaspoon chilli powder.</label>
+        <input type="checkbox" id="check19"><label for="check19">Add 2 to 3 tablespoons Pav bhaji Masala Powder.</label>
+        <input type="checkbox" id="check20"><label for="check20">Add 2 tablespoons if the pav bhaji masala .</label>
+        <input type="checkbox" id="check21"><label for="check21"> Mix very well.</label>
+        <input type="checkbox" id="check22"><label for="check22">Add the cooked veggies.</label>
+        <input type="checkbox" id="check23"><label for="check23">Add all of the stock or water from the pressure cooker.</label>
+        <input type="checkbox" id="check24"><label for="check24"> Season with salt according to your taste and give a mix.</label>
+             
+            </pre>
+
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+        <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+        <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+    </div>
+
+    <a href="/Recipies-doc/Recipe-1/recipe-1.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-3/recipe-3.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+
+    
+</body>
+</html>

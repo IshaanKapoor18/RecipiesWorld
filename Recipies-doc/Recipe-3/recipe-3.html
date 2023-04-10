@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer tikka#3</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-3.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+    <script src="/Recipies-doc/Recipe-1/recipe1.js"></script>
+</head>
+<body>
+    <button onclick="work()"><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Paneer tikka</h1>
+        </div>
+        <img src="first.jpg" alt="Dhosa pic">
+        
+
+        <input type="submit"  id="voice" 
+        onclick="micStarted()" value="Start Voice">
+       
+        <script>
+           
+           a = 1;
+           function micStarted(){
+//   voice 
+
+speechSynthesis.cancel();
+let utterance = new SpeechSynthesisUtterance("Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora.");
+speechSynthesis.speak(utterance);
+
+utterance = new SpeechSynthesisUtterance("Chunks of paneer, a type of fresh cheese, are marinated in spices and are then arranged on a stick with capsicums (bell peppers), onions and tomatoes. These sticks are grilled in a tandoor and the dish is thereafter served hot, seasoned with lemon juice and chaat masala.[8] It is sometimes accompanied by salad or mint chutney. Tikka dishes traditionally go well with mint chutney. The paneer, though tender, has a crisp singe on the surface.");
+speechSynthesis.speak(utterance);
+if(a == 1)
+{document.getElementById("voice").value = "Stop Voice!";a=0;
+}
+else if(a == 0){
+   document.getElementById("voice").value = "Start Voice";a=1;
+   speechSynthesis.cancel();
+}
+}
+
+        </script>
+
+
+        <div class="data">
+            <br>
+           
+                
+            <h2>
+                About Recipe:
+            </h2>
+            <p>
+                Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora.
+                <br><br>
+                Chunks of paneer, a type of fresh cheese, are marinated in spices and are then arranged on a stick with capsicums (bell peppers), onions and tomatoes. These sticks are grilled in a tandoor and the dish is thereafter served hot, seasoned with lemon juice and chaat masala. It is sometimes accompanied by salad or mint chutney. Tikka dishes traditionally go well with mint chutney. The paneer, though tender, has a crisp singe on the surface.
+            </p>
+            <h2>
+                Variations:
+            </h2>
+            <p>
+                When paneer tikka is served with a sauce, it is called paneer
+                 tikka masala. It is also served as with a wrap, paneer
+                  tikka roll, where the paneer tikka is wrapped into an 
+                  Indian bread and served. A variant of paneer tikka is also
+                   made as a kebab.
+<br><br>
+Over the years, there have been several variations,
+such as Kashmiri paneer tikka, where the paneer is stuffed 
+with chopped almonds and grilled, a variety of Chinese food,
+ paneer tikka masala chow mein, and dosa stuffed with paneer tikka.
+<br><br>
+
+                
+            </p>
+            <h2>
+                Instruction:
+            </h2>
+<p>
+    International fast food chains in India have also incorporated paneer 
+tikka into their menus, such as Pizza Hut and Domino's which offer a paneer
+ tikka topping on their pizzas, whereas Subway offers a paneer
+  tikka sandwich and McDonald's has a paneer tikka
+   wrap on its menu. ITC's Bingo brand of potato chips
+    has experimented with a paneer tikka flavour of chips.
+     Prior to that, in 2003, Nestle's Maggi experimented with a
+      ready to cook variety of paneer tikka. Other companies 
+      also offer spice mixes and ready-to-eat variants of paneer tikka.
+</p>
+            <h2>
+                Steps:
+            </h2>
+            <input type="submit" value="Start Making!" id="voice" onclick="test()">
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Paneer Tikka is a popular and delicious tandoori snack where Paneer (Indian cottage cheese cubes) are marinated in a spiced yogurt-based marinade, arranged on skewers and grilled in the oven. Worry not if you don’t have an oven – instead of grilling in oven, you can make Paneer Tikka Recipe on stovetop on a tawa/skillet. In this post I am sharing both the oven and stovetop methods.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Tikka basically means anything that is marinated and then baked or grilled or fried and paneer tikka is a popular vegetarian tikka dish. This tasty homemade version is similar to the dish served in restaurants, but I would say actually tastes better!");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("½ cup each of onions and capsicum.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Slice 200 to 250 grams block or paneer into cubes or squares.Put 200 grams hung curd (greek yogurt) in a bowl");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("2 teaspoons kashmiri red chili powder");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon coriander powder");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("½ teaspoon turmeric powder");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon ajwain (carom seeds)");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("1 teaspoon dry mango powder (amchur)");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add ½ tablespoon (1.5 teaspoons) lemon juice.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Serve the paneer tikka sprinkled with lemon juice");
+                    speechSynthesis.speak(utterance);
+
+
+
+                
+
+                    
+                }
+            </script>
+
+        <PRE>
+           
+        <input type="checkbox" id="check1"><label for="check1">½ cup each of onions and capsicum.</label>
+        <input type="checkbox" id="check2"><label for="check2">Slice 200 to 250 grams block or paneer into cubes or squares.</label>
+        <input type="checkbox" id="check3"><label for="check3">Put 200 grams hung curd (greek yogurt) in a bowl.</label>
+        <input type="checkbox" id="check4"><label for="check4">2 teaspoons kashmiri red chili powder.</label>
+        <input type="checkbox" id="check5"><label for="check5">1 teaspoon coriander powder.</label>
+        <input type="checkbox" id="check6"><label for="check6">½ teaspoon turmeric powder.</label>
+        <input type="checkbox" id="check7"><label for="check7">½ teaspoon garam masala powder.</label> 
+        <input type="checkbox" id="check8"><label for="check8">1 teaspoon cumin powder.</label>
+        <input type="checkbox" id="check9"><label for="check9">1 teaspoon dry mango powder (amchur).</label>
+        <input type="checkbox" id="check10"><label for="check10">1 teaspoon ajwain (carom seeds).</label>
+        <input type="checkbox" id="check11"><label for="check11">1 teaspoon chaat masala.</label>
+        <input type="checkbox" id="check12"><label for="check12">½ teaspoon black pepper powder (optional).</label>
+        <input type="checkbox" id="check13"><label for="check13">Add ½ tablespoon (1.5 teaspoons) lemon juice.</label>
+        <input type="checkbox" id="check14"><label for="check14">Oven at 230 or 240 degrees Celsius .</label> 
+        <input type="checkbox" id="check16"><label for="check16">Remove the tray from the oven and turn the paneer tikka skewers.</label>
+        <input type="checkbox" id="check17"><label for="check17">Serve the paneer tikka sprinkled with lemon juice.</label> 
+
+        </PRE>
+
+        </div>
+    
+    </div>
+
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+    </div>
+    
+    <a href="/Recipies-doc/Recipe-2/recipe-2.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-4/recipe-4.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

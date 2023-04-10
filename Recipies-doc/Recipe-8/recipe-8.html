@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papri chat</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-8.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+</head>
+<body>
+    <button><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Papri chat</h1>
+        </div>
+        <img src="first.jpg" alt="Papri chat pic">
+    
+
+
+        <br>
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+            speechSynthesis.cancel();
+            let utterance = new SpeechSynthesisUtterance("Papri chat or papri chaat is a popular traditional fast food and street food from the Indian subcontinent, in India, Bangladesh, Nepal and parts of Pakistan. Many various additional dishes throughout India are also referred to as papri chat. ");
+            speechSynthesis.speak(utterance);
+            if(a == 1)
+            {document.getElementById("voice").value = "Stop Voice!";a=0;
+            }
+            else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+            }
+        }
+
+         </script>
+
+
+
+        <div class="data">
+            <h2>
+                About Recipe:
+            </h2>
+
+            <p>
+                Papri chat or papri chaat is a popular traditional fast food and street food from the Indian subcontinent, in India, Bangladesh, Nepal and parts of Pakistan. Many various additional dishes throughout India are also referred to as papri chat. 
+            </p>
+            <h2>
+                Basic Requirements:
+            </h2>
+
+<p>
+    India is a land of tongue tickling sweet, sour and spicy chaats and there are many many varieties of it. However, out of all chaats, crispy flat puris (papdis) topped with potato, chickpeas, moong beans, onion, flavored with green chutney, sweet chutney, curd and crispy sev otherwise known as papdi chhat is best. It has a perfect combination of crunch and mouth-watering flavor of chutneys complimented by goodness of boiled potatoes, chickpeas and sprouted moongs, making it a perfect party snack. Prepare all raw materials in advance and allow your guests to assemble it themselves to their liking and spare yourself of all serving troubles of other recipes. Don’t forget to read tips and variations given below in this step by step photo recipe of dahi papri chaat to customize it to your liking.
+</p>
+
+
+            <h2>
+                Steps:
+            </h2>
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Take two deep serving plates and arrange 7-papadis");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Mix 2-tablespoons green chutney with chickpeas.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Top each plate with 1/3 cup potatoes and 1/4 cup onion.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("Top each plate with 1/3 cup chickpeas.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Top each plate with 1/4 cup moong beans.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Drizzle 1/4 cup curd over each plate.");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("Drizzle 2½ tablespoons date tamarind chutney over each plate.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Lightly sprinkle 1/4 cup sev over each pl");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Top each plate with 1½ tablespoons green chutney");
+                    speechSynthesis.speak(utterance);
+
+                  
+
+                    
+                }
+            </script>
+            <pre>
+        
+         
+            <input type="checkbox" id="check1"><label for="check1">Take two deep serving plates and arrange 7-papadis</label> 
+            <input type="checkbox" id="check2"><label for="check2">Mix 2-tablespoons green chutney with chickpeas.</label> 
+            <input type="checkbox" id="check3"><label for="check3">Top each plate with 1/3 cup potatoes and 1/4 cup onion.</label> 
+            <input type="checkbox" id="check4"><label for="check4">Top each plate with 1/3 cup chickpeas.</label>                 
+            <input type="checkbox" id="check5"><label for="check5">Top each plate with 1/4 cup moong beans.</label> 
+            <input type="checkbox" id="check6"><label for="check6">Drizzle 1/4 cup curd over each plate.</Label> 
+            <input type="checkbox" id="check7"><label for="check7">Drizzle 2½ tablespoons date tamarind chutney over each plate.</label>  
+            <input type="checkbox" id="check8"><label for="check8">Lightly sprinkle 1/4 cup sev over each pl</label> 
+            <input type="checkbox" id="check9"><label for="check9">Top each plate with 1½ tablespoons green chutney</label> 
+           
+
+          </p>
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+
+    </div>
+    
+    <a href="/Recipies-doc/Recipe-7/recipe-7.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-9/recipe-9.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>

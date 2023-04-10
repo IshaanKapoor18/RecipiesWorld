@@ -1,0 +1,85 @@
+body{
+    background-color: rgba(89, 0, 255, 0.626);
+    animation: back 10s linear infinite ;
+    display: grid;
+    place-items: center;
+}
+
+@keyframes back {
+    0%{
+        background-color: rgb(42, 165, 118);
+        color: azure;
+    }
+
+    20%{
+        background-color: rgb(42, 149, 165);
+        color: yellow;
+    }
+
+    40%{
+        background-color: rgb(42, 52, 165);
+        color: cadetblue;
+    }
+
+    60%{
+        background-color: rgb(120, 42, 165);
+        color: coral;
+    }
+    80%{
+        background-color: rgb(163, 42, 165);
+        color: white;
+    }
+    1000%{
+        background-color: rgb(165, 42, 75);
+        color: wheat;
+    }
+}
+
+
+.stop{
+    box-shadow: 10px;
+    width: 100%;
+    max-width: 600px;
+    background-size: cover;
+    background-position: center ;
+    padding: 40px 0px;
+    text-align: center;
+    margin: 90px auto 0;
+    font-family: cursive;
+}
+
+.stop h1{
+    margin-top: 10px;
+    font-size: 64px;
+}
+
+button{
+    /* display: flex; */
+    align-items: center;
+     width: 90px;
+    border-radius: 10px;
+    background-color: white;
+    border-style: solid;
+   border-width: 5px;
+}
+
+button:hover{
+    background-color: yellow;
+    
+}
+
+h1{
+    animation: back 10s linear infinite ;
+}
+
+.stop, h1{
+    background-color: rgba(240, 248, 255, 0.418);
+    border-style: outset;
+    border-width: 20px;
+    border-color: rgba(240, 248, 255, 0.32);
+    /* margin-bottom: 50px; */
+}
+h2{
+    color: whitesmoke;
+    text-indent: 60%;
+}

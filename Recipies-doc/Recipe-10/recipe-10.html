@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaji</title>
+    <link rel="stylesheet" href="/Recipies-doc/Recipe-1/recipe1.css">
+    <link rel="stylesheet" href="recipe-10.css">
+    <link rel="icon" href="/Logo-Rec-icon/icon-homepage.png">
+</head>
+<body>
+    <button><a href="/index.html"><label for="button">home
+    </label></a></button>
+    <button><a href="/stop-watch/face.html">Stop watch</a></button>
+    <button id="b1"><a href="/Note-add/full.html"><label for="b1">Add Note</label></a></button>
+    
+    <div class="div">
+        <div class="head">
+            <h1>Bhaji</h1>
+        </div>
+        <img src="first.jpg" alt="Bhaji pic">
+    
+
+
+        <br>
+        <input type="submit"  id="voice" 
+         onclick="micStarted()" value="Start Voice">
+        
+         <script>
+            
+            a = 1;
+            function micStarted(){
+//   voice 
+
+            speechSynthesis.cancel();
+            let utterance = new SpeechSynthesisUtterance("A bhaji is a type of fritter originating from the Indian subcontinent. It is made from spicy hot vegetables, commonly onion, and has several variants. It is a popular snack food in India, it is also very popular in Pakistan and it can be found for sale in street-side stalls, especially in tapris and dhabas. ");
+            speechSynthesis.speak(utterance);
+            if(a == 1)
+            {document.getElementById("voice").value = "Stop Voice!";a=0;
+            }
+            else if(a == 0){
+                document.getElementById("voice").value = "Start Voice";a=1;
+                speechSynthesis.cancel();
+            }
+        }
+
+         </script>
+
+
+
+        <div class="data">
+            <h2>
+                About Recipe:
+            </h2>
+
+                <p>
+                    A bhaji is a type of fritter originating from the Indian subcontinent. It is made from spicy hot vegetables, commonly onion, and has several variants. It is a popular snack food in India, it is also very popular in Pakistan and it can be found for sale in street-side stalls, especially in tapris and dhabas. 
+                </p>
+           
+
+            <h2>
+                Instruction:
+            </h2>
+
+            <p>
+                Onion Pakoda is a deep fried Indian snack of crispy and tasty onion fritters made with gram flour (besan), spices and herbs. Also called Onion Pakora these are a popular Indian street food as well. Like many Indian recipes, onion pakoda is made differently in various regions of India. It is one snack that is easy to prepare and tastes good too. I share two flavorful variants of the recipe.
+            </p>
+
+            <h2>
+                Steps:
+            </h2>
+            <div class="in"><input type="submit" value="Start Making!" id="voice" onclick="test()"></div> 
+            <script>
+                function test(){
+                    speechSynthesis.cancel();
+                    let utterance = new SpeechSynthesisUtterance("Slice the onions evenly and thinly.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Add the spices  carom seeds (ajwain)");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Mix everything well.");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("The onions would release water and then you can add water as required in the batter.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("When the pakora is a bit cooked and lightly crispy");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("You will have to turn the pakora a few times for even frying.");
+                    speechSynthesis.speak(utterance);
+
+
+                    
+                    utterance = new SpeechSynthesisUtterance("Fry the onion pakoda, till they look crisp and golden.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Remove fried onion pakora with a slotted spoon");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Set the fried green chillies aside.");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("Serve onion pakoda with the fried salted green chillies");
+                    speechSynthesis.speak(utterance);
+                    
+                    utterance = new SpeechSynthesisUtterance("");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("");
+                    speechSynthesis.speak(utterance);
+
+                    utterance = new SpeechSynthesisUtterance("");
+                    speechSynthesis.speak(utterance);
+
+                    
+                }
+            </script>
+            <pre>
+        
+         
+            <input type="checkbox" id="check1"><label for="check1">Slice the onions evenly and thinly.</label> 
+            <input type="checkbox" id="check2"><label for="check2">Add the spices – carom seeds (ajwain)</label> 
+            <input type="checkbox" id="check3"><label for="check3">Mix everything well.</label> 
+            <input type="checkbox" id="check4"><label for="check4">The onions would release water.</label>                 
+            <input type="checkbox" id="check5"><label for="check5">Add water as required in the batter.</label> 
+            <input type="checkbox" id="check6"><label for="check6">Add gram flour (besan).</Label> 
+            <input type="checkbox" id="check7"><label for="check7">Stir the whole mixture very well with a spoon or with your hands.</label>  
+            <input type="checkbox" id="check8"><label for="check8">When the pakora is a bit cooked and lightly crispy</label> 
+            <input type="checkbox" id="check9"><label for="check9">You will have to turn the pakora a few times for even frying.</label> 
+            <input type="checkbox" id="check10"><label for="check10">Fry the onion pakoda, till they look crisp and golden.</label> 
+            <input type="checkbox" id="check11"><label for="check11">Remove fried onion pakora with a slotted spoon</label> 
+            <input type="checkbox" id="check12"><label for="check12">Serve onion pakoda with the fried salted green chillies</label> 
+           
+
+          </p>
+        </div>
+    
+    </div>
+
+    <div class="ifr">
+    <iframe src="/Note-add/front.html" frameborder="0"></iframe>
+    <iframe src="/stop-watch/side.html" frameborder="0"></iframe>
+    </div>
+
+    <a href="/Recipies-doc/Recipe-9/recipe-9.html"><img src="/Logo-Rec-icon/prev.png" alt="previous" class="end" id="space"></a>
+    <a href="/index.html"><img src="/Logo-Rec-icon/home.png" alt="home" class="home"></a>
+    <a href="/Recipies-doc/Recipe-11/recipe-11.html"><img src="/Logo-Rec-icon/next.png" alt="next" class="end"></a>
+</body>
+</html>
