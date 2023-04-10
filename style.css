@@ -1,0 +1,225 @@
+body{
+    border-style: inset;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: rgb(240, 172, 240);
+    margin-left: 2px;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button1{
+    background-color: hsl(271, 67%, 79%);
+    text-align: center;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    width: 10vw;
+}
+.nav{
+    width: 90vw;
+    margin-left: 90px;
+}
+
+button:hover{
+    background-color: rgb(249, 249, 75);
+    transition: 0.9s;
+}
+
+
+
+.recipe1{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: rgb(241, 143, 241);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px   ;
+    width: 300px;
+    height: 212;
+}
+.recipe1:hover{
+    border-color: rgb(249, 249, 75);
+    border-style: inset;
+    transition: 0.5s;
+}
+label{
+    margin-left: 60px;
+    margin-right: 60px;
+    color: dodgerblue;
+}
+.recipes{
+    border-style: solid;
+    background-color: rgb(220, 255, 255);
+    border-width: 5px;
+    margin-bottom: 10px;
+    border-color: aquamarine;
+    
+}
+.recipes{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color: red; */
+    border-radius:5px;
+}
+
+
+#r1{
+    width: 200px;
+    height: 112px;
+    margin-top: 10px;
+    margin-left: 80px;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    border-color: rgb(241, 143, 241);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px   ;
+    
+}
+
+#r1:hover{
+    border-color:  rgb(250, 250, 140);
+    border-style: inset;
+    transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 50px;
+
+}
+
+.recipes:hover{
+    background-color: rgb(196, 243, 237);
+    /* background-image: url(./Logo-Rec-icon/Recipes/recp-background.jpg); */
+    border-style: inset;
+    border-color: aqua;
+}
+
+hr{
+    color: rgb(129, 125, 125);
+}
+marquee{
+    color: rgb(3, 3, 3);
+    margin-top: 5px;
+}
+p{
+    padding: 0;
+    /* margin: 0; */
+    /* margin: auto; */
+    
+    margin-left: 50px;
+    border-style: inset; 
+   margin-bottom: 5px;
+   margin-right: 82%;
+   border-width: 5px;
+   border-radius: 5px;
+   background-color: azure;
+    /* color: aliceblue; */
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    /* margin-right: 70%; */
+   
+}
+
+.descp{
+    background-image: url(./Logo-Rec-icon/Recipes/recp-background.jpg);
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  
+   
+}
+
+  
+.block{
+   
+    background-color: rgba(255, 0, 0, 0.582);
+    margin: 30px 90px 0px 90px;
+    border-radius: 50px;
+  
+}
+
+.descp{
+    border-radius: 20px;
+}
+h1{
+    color: #000000;
+}
+
+.marquee_1{
+    
+    border-style: inset; 
+  
+  
+   border-width: 5px;
+   border-radius: 5px;
+   background-color: rgb(125, 250, 250);
+    /* color: aliceblue; */
+    text-shadow: 2px 2px 4px #0f0f0f;
+    font-size: 20px;
+    border-color: aquamarine;
+}
+
+#home-icon{
+    mix-blend-mode:color-burn;
+}
+
+
+#mid{
+    margin-left: 5%;
+    text-decoration: underline;
+   
+    color: aliceblue;
+}
+
+#mid2{
+    
+    color: rgb(237, 241, 12);
+    /* text-align: center; */
+    text-decoration: unset;
+    text-shadow: #da8a13;
+    
+}
+
+tbody{
+    margin-left: 10%;
+}
+.last{
+  
+    
+   display: flex;
+   justify-content: center;
+   mix-blend-mode:multiply;
+   opacity: 0.5;
+}
+
+
+.slot{
+    background-color: red;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 50px;
+    
+}
+.innerslot{
+    background-color: rgba(245, 245, 4, 0.637);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#slot-text{
+    text-decoration: underline;
+    color: rgb(15, 15, 15);
+    margin: 1%;
+    
+   
+}
+
+#slot-inner-text{
+    display: flex;
+    justify-content:flex-start;
+    margin: 5%;
+}
